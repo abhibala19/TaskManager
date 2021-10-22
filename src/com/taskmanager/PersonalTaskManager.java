@@ -69,6 +69,8 @@ public class PersonalTaskManager {
 									System.out.println("task "+ taskName+" got added successfully");
 								else
 									System.out.println("task addition failed .msg is "+result);
+								break;
+							case 2:
 								
 
 							}

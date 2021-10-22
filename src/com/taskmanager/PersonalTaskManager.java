@@ -1,5 +1,7 @@
 package com.taskmanager;
 
+import com.taskmanager.model.TaskModel;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
@@ -13,7 +15,7 @@ public class PersonalTaskManager {
 			Logger.getInstance().log("task manager starts");
 			int ch1 = 0, ch2 = 0, priority = 0;
 			String catName, taskName, description, tag;
-			SimpleDateFormat dt = new SimpleDateFormat("dd/MM//yy");
+			SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy");
 
 			TaskModel model = new TaskModel();
 			while (ch1 != 6) {
@@ -57,7 +59,7 @@ public class PersonalTaskManager {
 								description = sc2.nextLine();
 								System.out.println("enter priority for the task 1-low 10-high ");
 								priority = sc1.nextInt();
-								System.out.println("enter the planned due date dd//MM//yy");
+								System.out.println("enter the planned due date dd/MM/yyyy");
 								String duedate = sc2.nextLine();
 								Date date = dt.parse(duedate);
 

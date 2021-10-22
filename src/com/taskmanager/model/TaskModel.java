@@ -1,4 +1,7 @@
-package com.taskmanager;
+package com.taskmanager.model;
+
+import com.taskmanager.Constants;
+import com.taskmanager.TaskBean;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
